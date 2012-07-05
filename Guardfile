@@ -1,4 +1,4 @@
-guard 'rspec', :cli => '--format documentation', :version => 2, :all_after_pass => false, :all_on_start => false, :keep_failed => false do
+guard 'rspec', :cli => '--format documentation', :version => 2, :all_after_pass => false, :keep_failed => false do
   watch(%r{^spec/.+_spec\.rb$})
   watch(%r{^spec/.+\.rb$})
   watch(%r{^lib/(.+)\.rb$})                   { "spec" }
